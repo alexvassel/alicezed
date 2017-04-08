@@ -1,0 +1,68 @@
+/*for slider*/
+#slider {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scroll {
+  height: 800px;
+  overflow: auto;
+  position: relative; /* fix for IE to respect overflow */
+}
+.panel {
+  padding: 0 30px;
+  width:755px; /* not changes! */
+}
+#slider{
+	margin-top: -30px;
+}
+#slider .navigation {
+	margin-top: 40px;
+	width:150px; /*not changes!*/
+	float:left;
+	display:block;
+}
+.navigation li{
+	list-style: none;
+}
+#slider .navigation li a{
+	display: block;
+	color:#333f4c;
+	font-size:28px;
+	padding: 0px;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+.center img{ /*image center*/
+	margin-left: 140px ;
+	width: 500px;
+}
+h2{
+	padding: 0px;
+}
+#back, #back2, #back3, #back4, #back5, #back6{
+	position:absolute;
+	left:-20px;
+	top:25%;
+	z-index: 999;
+}	
+#next, #next2, #next3, #next4, #next5, #next6{
+	position:absolute;
+	right:200px;
+	top:25%;
+	z-index: 999;
+}
+#next, #back, #next2, #back2, #next3, #back3, 
+#next4, #back4, #next5, #back5, #next6, #back6{
+	cursor:pointer;
+}
+.photosblock{
+	width:1000px;
+	margin:0 auto;	
+	position:relative;
+	min-height:800px;
+	display: block;
+	z-index: 1;
+	padding-top: 20px;
+}				

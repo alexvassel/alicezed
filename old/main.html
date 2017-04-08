@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kireeva Efrosinya</title>
+	<link rel="stylesheet" type="text/css" href="/old/style.css" />
+	<script src="js/jquery-1.4.4.js"></script>
+	<script type='text/javascript' src='/old/js/queryLoader.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			$("a#works").click(function(){
+				var elem=$(this).nextAll("div#after:first");
+				if(elem.is(":hidden")){
+					$("div#after:visible").hide();
+				 	elem.show("normal");
+				 } else {
+					elem.hide("normal");
+				}
+					return false;
+				});
+		});
+		
+		$(function(){		
+			$("#social a[href^='http://']").click(function(){ 
+		 		this.target = "_blank"; 
+			 }); 
+		 });		
+	</script>
+	
+	<style>
+		html {
+			background:#000 url(images/var3.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();//--></script><!--/LiveInternet-->
+
+
+<div id="content">
+
+	<div id="contacts">
+		<h1>:contacts</h1><br/>
+			<a href="mailto:es-kireeva@mail.ru">es-kireeva@mail.ru</a> <span class="ocol">:e-mail</span><br/>
+			8-926-556-25-15 <span class="ocol">:tel</span><br/>
+			469374133 <span class="ocol">:icq</span><br/>
+			
+		<ul id="social">
+			<a href="http://www.facebook.com/profile.php?id=100001810863713"><li class="fs"></li></a>
+			<a href="http://vk.com/frosya.yozh"><li class="vk"></li></a>
+			<a href="http://www.flickr.com/photos/66371646@N08/"><li class="flr"></li></a>
+			<a href="http://www.formspring.me/frosenka"><li class="formspr"></li></a>
+			<a href="http://twitter.com/#!/frosenka"><li class="twi"></li></a>
+		</ul> <!--social-->
+	
+	</div> <!--contacts-->
+
+	<div id="menu">
+		<a id="about" href="/old/about.html">about me</a>
+		<a id="works" href="#">my creations</a>
+			<div id="after">
+				<a href="/old/photos.html" class="after1">photos</a>
+				<a href="/old/gal.html" class="after2">projects</a>
+				<a href="/old/drawings.html" class="after3">drawings</a>
+		    </div>
+		<a id="others" href="/old/others.html">others</a>
+	</div> <!--menu-->
+	
+<!--LiveInternet logo-->
+	<div class="statistic">
+			<a href="http://www.liveinternet.ru/click"
+			target="_blank"><img src="//counter.yadro.ru/logo?45.18"
+			title="LiveInternet"
+			alt="" border="0" width="31" height="31"/></a><!--/LiveInternet-->	
+	</div>
+</div> <!--content-->
+
+<script type='text/javascript'>
+QueryLoader.init();
+</script>
+</body>
+</html>
